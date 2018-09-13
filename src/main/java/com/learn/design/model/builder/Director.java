@@ -3,7 +3,6 @@ package com.learn.design.model.builder;
 import com.learn.design.model.builder.builder.AudiCarModelBuilder;
 import com.learn.design.model.builder.builder.BzCarModelBuilder;
 import com.learn.design.model.builder.builder.CarModeBuilder;
-import com.learn.design.model.builder.product.AudiCardModel;
 import com.learn.design.model.builder.product.CarModel;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,6 +45,4 @@ public class Director {
     director.getAudiCardMode().run();
     director.getBzCarModel().run();
   }
-
-
 }
