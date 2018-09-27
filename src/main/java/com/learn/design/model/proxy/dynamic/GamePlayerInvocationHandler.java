@@ -19,6 +19,11 @@ public class GamePlayerInvocationHandler implements InvocationHandler {
   }
 
   public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    before();
     return method.invoke(gamePlayer, args);
+  }
+
+  private void before() {
+    System.out.println("执行方法前的操作....");
   }
 }
